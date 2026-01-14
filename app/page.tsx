@@ -195,11 +195,11 @@ export default function Landing() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Header sticky */}
-      <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+      <header className="sticky top-0 z-50 bg-white border-b border-[#cfccce] shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
-              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 text-[#8b1e2c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
               <span className="text-xl font-bold text-gray-900">DAMROD SAS</span>
@@ -207,19 +207,19 @@ export default function Landing() {
 
             {/* Desktop nav */}
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#inicio" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition">
+              <a href="#inicio" className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition">
                 Inicio
               </a>
-              <a href="#nosotros" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition">
+              <a href="#nosotros" className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition">
                 Nosotros
               </a>
-              <a href="#servicios" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition">
+              <a href="#servicios" className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition">
                 Servicios
               </a>
-              <a href="#trabajos" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition">
+              <a href="#trabajos" className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition">
                 Trabajos
               </a>
-              <a href="#contacto" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition">
+              <a href="#contacto" className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition">
                 Contacto
               </a>
               <a
@@ -250,39 +250,39 @@ export default function Landing() {
 
           {/* Mobile menu */}
           {mobileMenuOpen && (
-            <nav className="md:hidden py-4 border-t border-gray-200">
+            <nav className="md:hidden py-4 border-t border-[#cfccce]">
               <div className="flex flex-col gap-3">
                 <a
                   href="#inicio"
-                  className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+                  className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Inicio
                 </a>
                 <a
                   href="#nosotros"
-                  className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+                  className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Nosotros
                 </a>
                 <a
                   href="#servicios"
-                  className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+                  className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Servicios
                 </a>
                 <a
                   href="#trabajos"
-                  className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+                  className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Trabajos
                 </a>
                 <a
                   href="#contacto"
-                  className="text-sm font-medium text-gray-700 hover:text-blue-600 transition"
+                  className="text-sm font-medium text-gray-700 hover:text-[#8b1e2c] transition"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Contacto
@@ -302,100 +302,109 @@ export default function Landing() {
       </header>
 
       <main>
-        {/* Hero */}
-        <section id="inicio" className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                  Ingeniería eléctrica MT/BT integral
-                </h1>
-                <p className="text-lg md:text-xl text-blue-100 mb-6">
-                  Soluciones completas en infraestructura eléctrica para proyectos de media y baja tensión en toda la
-                  región NEA
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-3">
-                    <svg
-                      className="w-6 h-6 text-green-400 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Más de 5 años de experiencia en el sector</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <svg
-                      className="w-6 h-6 text-green-400 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Cuadrillas certificadas y equipamiento propio</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <svg
-                      className="w-6 h-6 text-green-400 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Cobertura en toda la región del NEA</span>
-                  </li>
-                </ul>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a
-                    href="#contacto"
-                    className="px-6 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition text-center"
+        {/* Hero - Actualizado con video de fondo responsive */}
+        <section
+          id="inicio"
+          className="relative flex items-center justify-center text-white overflow-hidden min-h-[85vh] sm:min-h-[90vh] md:min-h-[95vh]"
+        >
+          {/* VIDEO DE FONDO RESPONSIVO */}
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="/videos/videohero.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#8b1e2c]/85 via-[#6b1722]/80 to-[#8b1e2c]/85"></div>
+
+          {/* CONTENIDO PRINCIPAL */}
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+            <div className="max-w-3xl mx-auto text-center md:text-left md:mx-0">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+                Ingeniería eléctrica MT/BT integral
+              </h1>
+
+              <p className="text-base sm:text-lg md:text-xl text-[#e0d9cf] mb-6 sm:mb-8">
+                Soluciones completas en infraestructura eléctrica para proyectos de media y baja tensión en toda la
+                región NEA
+              </p>
+
+              <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-left max-w-xl mx-auto md:mx-0">
+                <li className="flex items-center gap-2 sm:gap-3">
+                  <svg
+                    className="w-5 h-5 sm:w-6 sm:h-6 text-green-400 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    Pedir cotización
-                  </a>
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition text-center"
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm sm:text-base">Más de 5 años de experiencia en el sector</span>
+                </li>
+                <li className="flex items-center gap-2 sm:gap-3">
+                  <svg
+                    className="w-5 h-5 sm:w-6 sm:h-6 text-green-400 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    WhatsApp
-                  </a>
-                </div>
-              </div>
-              <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Ingeniería eléctrica - Trabajos en altura en instalaciones de media tensión"
-                  className="w-full h-full object-cover"
-                />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm sm:text-base">Cuadrillas certificadas y equipamiento propio</span>
+                </li>
+                <li className="flex items-center gap-2 sm:gap-3">
+                  <svg
+                    className="w-5 h-5 sm:w-6 sm:h-6 text-green-400 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm sm:text-base">Cobertura en toda la región del NEA</span>
+                </li>
+              </ul>
+
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto md:mx-0">
+                <a
+                  href="#contacto"
+                  className="px-6 py-3 bg-white text-[#8b1e2c] font-semibold rounded-lg hover:bg-[#e0d9cf] transition text-center text-sm sm:text-base"
+                >
+                  Pedir cotización
+                </a>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition text-center text-sm sm:text-base"
+                >
+                  WhatsApp
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* KPIs de confianza */}
-        <section className="bg-gray-50 py-12 border-b border-gray-200">
+        {/* KPIs de confianza - Mejorado espaciado y tamaños para mobile */}
+        <section className="bg-[#e0d9cf] py-8 sm:py-10 md:py-12 border-b border-[#cfccce]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">+5</div>
-                <div className="text-sm md:text-base text-gray-600">Años de experiencia</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+              <div className="text-center p-3 sm:p-4">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#8b1e2c] mb-1 sm:mb-2">+5</div>
+                <div className="text-xs sm:text-sm md:text-base text-gray-700">Años de experiencia</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">+100</div>
-                <div className="text-sm md:text-base text-gray-600">Proyectos ejecutados</div>
+              <div className="text-center p-3 sm:p-4">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#8b1e2c] mb-1 sm:mb-2">+100</div>
+                <div className="text-xs sm:text-sm md:text-base text-gray-700">Proyectos ejecutados</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">4</div>
-                <div className="text-sm md:text-base text-gray-600">Provincias de cobertura</div>
+              <div className="text-center p-3 sm:p-4">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#8b1e2c] mb-1 sm:mb-2">4</div>
+                <div className="text-xs sm:text-sm md:text-base text-gray-700">Provincias de cobertura</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">100%</div>
-                <div className="text-sm md:text-base text-gray-600">Personal certificado</div>
+              <div className="text-center p-3 sm:p-4">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#8b1e2c] mb-1 sm:mb-2">100%</div>
+                <div className="text-xs sm:text-sm md:text-base text-gray-700">Personal certificado</div>
               </div>
             </div>
           </div>
@@ -428,7 +437,7 @@ export default function Landing() {
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-6 mt-8">
-                  <div className="bg-blue-50 p-6 rounded-lg">
+                  <div className="bg-[#cfccce] p-6 rounded-lg">
                     <h4 className="font-bold text-gray-900 mb-2">Misión</h4>
                     <p className="text-sm text-gray-700 leading-relaxed">
                       Ofrecer soluciones de ingeniería y construcción en infraestructura eléctrica, garantizando
@@ -436,7 +445,7 @@ export default function Landing() {
                       la provincia y la región, superando las expectativas de nuestros clientes en cada proyecto.
                     </p>
                   </div>
-                  <div className="bg-blue-50 p-6 rounded-lg">
+                  <div className="bg-[#cfccce] p-6 rounded-lg">
                     <h4 className="font-bold text-gray-900 mb-2">Visión</h4>
                     <p className="text-sm text-gray-700 leading-relaxed">
                       Ser una empresa referente en la región dentro del sector de la energía eléctrica, reconocida por
@@ -458,7 +467,7 @@ export default function Landing() {
         </section>
 
         {/* Servicios */}
-        <section id="servicios" className="py-16 md:py-24 bg-gray-50">
+        <section id="servicios" className="py-16 md:py-24 bg-[#e0d9cf]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestros servicios</h2>
@@ -470,12 +479,12 @@ export default function Landing() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {servicios.map((servicio, idx) => (
                 <div key={idx} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                  <div className="text-blue-600 mb-4">{servicio.icon}</div>
+                  <div className="text-[#8b1e2c] mb-4">{servicio.icon}</div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3">{servicio.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed mb-4">{servicio.desc}</p>
                   <a
                     href="#contacto"
-                    className="inline-block text-sm font-medium text-blue-600 hover:text-blue-700 transition"
+                    className="inline-block text-sm font-medium text-[#8b1e2c] hover:text-[#d15666] transition"
                   >
                     Solicitar info →
                   </a>
@@ -485,17 +494,17 @@ export default function Landing() {
           </div>
         </section>
 
-        {/* Cómo trabajamos */}
-        <section className="py-16 md:py-24">
+        {/* Cómo trabajamos - Mejorado layout responsive */}
+        <section className="py-12 sm:py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cómo trabajamos</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Cómo trabajamos</h2>
+              <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
                 Nuestro proceso garantiza la excelencia en cada etapa del proyecto
               </p>
             </div>
 
-            <div className="grid md:grid-cols-5 gap-6">
+            <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6">
               {[
                 { num: "01", title: "Diseño", desc: "Ingeniería de detalle y planificación técnica" },
                 { num: "02", title: "Planificación", desc: "Cronograma, recursos y logística" },
@@ -504,12 +513,12 @@ export default function Landing() {
                 { num: "05", title: "Mantenimiento", desc: "Soporte preventivo y correctivo" },
               ].map((paso, idx) => (
                 <div key={idx} className="relative">
-                  <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
-                    <div className="text-4xl font-bold text-blue-100 mb-2">{paso.num}</div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{paso.title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{paso.desc}</p>
+                  <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md border-t-4 border-[#8b1e2c] h-full">
+                    <div className="text-3xl sm:text-4xl font-bold text-[#e0d9cf] mb-2">{paso.num}</div>
+                    <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">{paso.title}</h3>
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{paso.desc}</p>
                   </div>
-                  {idx < 4 && <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-blue-200" />}
+                  {idx < 4 && <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-[#cfccce]" />}
                 </div>
               ))}
             </div>
@@ -517,11 +526,11 @@ export default function Landing() {
         </section>
 
         {/* Valores y Seguridad */}
-        <section className="py-16 md:py-24 bg-blue-900 text-white">
+        <section className="py-16 md:py-24 bg-[#8b1e2c] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestros valores</h2>
-              <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+              <p className="text-lg text-[#e0d9cf] max-w-2xl mx-auto">
                 Principios que guían cada uno de nuestros proyectos
               </p>
             </div>
@@ -585,22 +594,22 @@ export default function Landing() {
                   ),
                 },
               ].map((valor, idx) => (
-                <div key={idx} className="bg-blue-800 p-6 rounded-lg">
-                  <div className="text-blue-300 mb-4">{valor.icon}</div>
+                <div key={idx} className="bg-[#6b1722] p-6 rounded-lg">
+                  <div className="text-[#d15666] mb-4">{valor.icon}</div>
                   <h3 className="text-xl font-bold mb-3">{valor.title}</h3>
-                  <p className="text-sm text-blue-100 leading-relaxed">{valor.desc}</p>
+                  <p className="text-sm text-[#e0d9cf] leading-relaxed">{valor.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div className="bg-blue-800 p-8 rounded-lg">
+            <div className="bg-[#6b1722] p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4">Seguridad y Medio Ambiente</h3>
-              <p className="text-blue-100 leading-relaxed mb-4">
+              <p className="text-[#e0d9cf] leading-relaxed mb-4">
                 Implementamos estrictos protocolos de seguridad en todas nuestras operaciones, cumpliendo con las
                 normativas nacionales e internacionales. Nuestro personal está capacitado en prevención de riesgos
                 laborales y utilizamos equipamiento de protección certificado.
               </p>
-              <p className="text-blue-100 leading-relaxed">
+              <p className="text-[#e0d9cf] leading-relaxed">
                 Además, nos comprometemos con el cuidado del medio ambiente, minimizando el impacto de nuestras obras y
                 gestionando responsablemente los residuos generados en cada proyecto.
               </p>
@@ -608,19 +617,21 @@ export default function Landing() {
           </div>
         </section>
 
-        {/* Trabajos Realizados - Carrusel */}
-        <section id="trabajos" className="py-16 md:py-24 bg-gray-50">
+        {/* Trabajos Realizados - Carrusel - Controles mejorados para mobile */}
+        <section id="trabajos" className="py-12 sm:py-16 md:py-24 bg-[#e0d9cf]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Trabajos realizados</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+                Trabajos realizados
+              </h2>
+              <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
                 Proyectos ejecutados con excelencia técnica y compromiso
               </p>
             </div>
 
             <div className="relative">
               {/* Carrusel */}
-              <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-xl">
+              <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
                 {trabajosRealizados.map((trabajo, idx) => (
                   <div
                     key={idx}
@@ -634,46 +645,57 @@ export default function Landing() {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-2">{trabajo.title}</h3>
-                      <p className="text-sm md:text-base text-gray-200">{trabajo.desc}</p>
+                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white">
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-1 sm:mb-2">
+                        {trabajo.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-200">{trabajo.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              {/* Controles */}
+              {/* Controles - Mejorados para touch en mobile */}
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 p-3 rounded-full shadow-lg transition"
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 p-2 sm:p-3 rounded-full shadow-lg transition touch-manipulation"
                 aria-label="Anterior"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 p-3 rounded-full shadow-lg transition"
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 p-2 sm:p-3 rounded-full shadow-lg transition touch-manipulation"
                 aria-label="Siguiente"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
 
-              {/* Indicadores */}
-              <div className="flex justify-center gap-2 mt-6">
+              {/* Indicadores - Mejorado tamaño para mobile */}
+              <div className="flex justify-center gap-2 mt-4 sm:mt-6">
                 {trabajosRealizados.map((_, idx) => (
                   <button
                     key={idx}
                     onClick={() => setCurrentSlide(idx)}
-                    className={`w-2 h-2 rounded-full transition ${
-                      idx === currentSlide ? "bg-blue-600 w-8" : "bg-gray-300"
+                    className={`h-2 rounded-full transition touch-manipulation ${
+                      idx === currentSlide ? "bg-[#8b1e2c] w-6 sm:w-8" : "bg-[#cfccce] w-2"
                     }`}
                     aria-label={`Ir a slide ${idx + 1}`}
                   />
                 ))}
+              </div>
+
+              <div className="flex justify-center mt-6 sm:mt-8">
+                <a
+                  href="#contacto"
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 bg-[#8b1e2c] text-white text-sm sm:text-base font-semibold rounded-lg hover:bg-[#d15666] transition shadow-md"
+                >
+                  Portfolio de obras
+                </a>
               </div>
             </div>
           </div>
@@ -726,7 +748,7 @@ export default function Landing() {
         </section>
 
         {/* FAQs */}
-        <section className="py-16 md:py-24 bg-gray-50">
+        <section className="py-16 md:py-24 bg-[#e0d9cf]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
@@ -738,7 +760,7 @@ export default function Landing() {
                 <div key={idx} className="bg-white rounded-lg shadow-md overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition"
+                    className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-[#cfccce] transition"
                   >
                     <span className="font-semibold text-gray-900 pr-4">{faq.q}</span>
                     <svg
@@ -763,25 +785,27 @@ export default function Landing() {
           </div>
         </section>
 
-        {/* CTA intermedio */}
-        <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+        {/* CTA intermedio - Mejorado espaciado responsive */}
+        <section className="py-12 sm:py-16 bg-gradient-to-r from-[#8b1e2c] to-[#d15666] text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Listo para empezar tu proyecto eléctrico?</h2>
-            <p className="text-lg text-blue-100 mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-4">
+              ¿Listo para empezar tu proyecto eléctrico?
+            </h2>
+            <p className="text-base sm:text-lg text-[#e0d9cf] mb-6 sm:mb-8 px-4">
               Contáctanos hoy y recibe una cotización personalizada sin compromiso
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md mx-auto">
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
+                className="px-6 sm:px-8 py-2.5 sm:py-3 bg-green-600 text-white text-sm sm:text-base font-semibold rounded-lg hover:bg-green-700 transition"
               >
                 Consultar por WhatsApp
               </a>
               <a
                 href="#contacto"
-                className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition"
+                className="px-6 sm:px-8 py-2.5 sm:py-3 bg-white text-[#8b1e2c] text-sm sm:text-base font-semibold rounded-lg hover:bg-[#e0d9cf] transition"
               >
                 Enviar formulario
               </a>
@@ -813,7 +837,7 @@ export default function Landing() {
                         id="nombre"
                         name="nombre"
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-[#cfccce] rounded-lg focus:ring-2 focus:ring-[#8b1e2c] focus:border-transparent"
                       />
                     </div>
                     <div>
@@ -825,7 +849,7 @@ export default function Landing() {
                         id="email"
                         name="email"
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-[#cfccce] rounded-lg focus:ring-2 focus:ring-[#8b1e2c] focus:border-transparent"
                       />
                     </div>
                   </div>
@@ -840,7 +864,7 @@ export default function Landing() {
                         id="telefono"
                         name="telefono"
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-[#cfccce] rounded-lg focus:ring-2 focus:ring-[#8b1e2c] focus:border-transparent"
                       />
                     </div>
                     <div>
@@ -851,7 +875,7 @@ export default function Landing() {
                         type="text"
                         id="empresa"
                         name="empresa"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        className="w-full px-4 py-2 border border-[#cfccce] rounded-lg focus:ring-2 focus:ring-[#8b1e2c] focus:border-transparent"
                       />
                     </div>
                   </div>
@@ -864,7 +888,7 @@ export default function Landing() {
                       id="asunto"
                       name="asunto"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-[#cfccce] rounded-lg focus:ring-2 focus:ring-[#8b1e2c] focus:border-transparent"
                     >
                       <option value="">Seleccione un asunto</option>
                       <option value="cotizacion">Solicitar cotización</option>
@@ -883,7 +907,7 @@ export default function Landing() {
                       name="mensaje"
                       rows={5}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-none"
+                      className="w-full px-4 py-2 border border-[#cfccce] rounded-lg focus:ring-2 focus:ring-[#8b1e2c] focus:border-transparent resize-none"
                     />
                   </div>
 
@@ -893,7 +917,7 @@ export default function Landing() {
                         type="checkbox"
                         name="politica"
                         required
-                        className="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600"
+                        className="mt-1 w-4 h-4 text-[#8b1e2c] border-[#cfccce] rounded focus:ring-[#8b1e2c]"
                       />
                       <span className="text-sm text-gray-600">
                         Acepto la política de privacidad y el tratamiento de mis datos personales *
@@ -903,7 +927,7 @@ export default function Landing() {
 
                   <button
                     type="submit"
-                    className="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
+                    className="w-full px-6 py-3 bg-[#8b1e2c] text-white font-semibold rounded-lg hover:bg-[#d15666] transition"
                   >
                     Enviar consulta
                   </button>
@@ -912,12 +936,12 @@ export default function Landing() {
 
               {/* Datos de contacto */}
               <div className="space-y-6">
-                <div className="bg-blue-50 p-6 rounded-lg">
+                <div className="bg-[#cfccce] p-6 rounded-lg">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Información de contacto</h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <svg
-                        className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+                        className="w-6 h-6 text-[#8b1e2c] flex-shrink-0 mt-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -943,7 +967,7 @@ export default function Landing() {
 
                     <div className="flex items-start gap-3">
                       <svg
-                        className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+                        className="w-6 h-6 text-[#8b1e2c] flex-shrink-0 mt-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -963,7 +987,7 @@ export default function Landing() {
 
                     <div className="flex items-start gap-3">
                       <svg
-                        className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+                        className="w-6 h-6 text-[#8b1e2c] flex-shrink-0 mt-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -1001,8 +1025,8 @@ export default function Landing() {
           </div>
         </section>
 
-        {/* Mapa / Cobertura */}
-        <section className="py-16 md:py-24 bg-gray-50">
+        {/* MAPA / Cobertura */}
+        <section className="py-16 md:py-24 bg-[#e0d9cf]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
@@ -1014,7 +1038,7 @@ export default function Landing() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <svg
-                      className="w-6 h-6 text-blue-600 flex-shrink-0"
+                      className="w-6 h-6 text-[#8b1e2c] flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -1025,7 +1049,7 @@ export default function Landing() {
                   </div>
                   <div className="flex items-center gap-3">
                     <svg
-                      className="w-6 h-6 text-blue-600 flex-shrink-0"
+                      className="w-6 h-6 text-[#8b1e2c] flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -1036,7 +1060,7 @@ export default function Landing() {
                   </div>
                   <div className="flex items-center gap-3">
                     <svg
-                      className="w-6 h-6 text-blue-600 flex-shrink-0"
+                      className="w-6 h-6 text-[#8b1e2c] flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -1047,7 +1071,7 @@ export default function Landing() {
                   </div>
                   <div className="flex items-center gap-3">
                     <svg
-                      className="w-6 h-6 text-blue-600 flex-shrink-0"
+                      className="w-6 h-6 text-[#8b1e2c] flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -1077,7 +1101,7 @@ export default function Landing() {
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#d15666]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
                 <span className="text-xl font-bold text-white">DAMROD SAS</span>
@@ -1091,27 +1115,27 @@ export default function Landing() {
               <h3 className="text-white font-semibold mb-4">Navegación</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#inicio" className="hover:text-blue-400 transition">
+                  <a href="#inicio" className="hover:text-[#d15666] transition">
                     Inicio
                   </a>
                 </li>
                 <li>
-                  <a href="#nosotros" className="hover:text-blue-400 transition">
+                  <a href="#nosotros" className="hover:text-[#d15666] transition">
                     Nosotros
                   </a>
                 </li>
                 <li>
-                  <a href="#servicios" className="hover:text-blue-400 transition">
+                  <a href="#servicios" className="hover:text-[#d15666] transition">
                     Servicios
                   </a>
                 </li>
                 <li>
-                  <a href="#trabajos" className="hover:text-blue-400 transition">
+                  <a href="#trabajos" className="hover:text-[#d15666] transition">
                     Trabajos
                   </a>
                 </li>
                 <li>
-                  <a href="#contacto" className="hover:text-blue-400 transition">
+                  <a href="#contacto" className="hover:text-[#d15666] transition">
                     Contacto
                   </a>
                 </li>
@@ -1122,22 +1146,22 @@ export default function Landing() {
               <h3 className="text-white font-semibold mb-4">Servicios</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#servicios" className="hover:text-blue-400 transition">
+                  <a href="#servicios" className="hover:text-[#d15666] transition">
                     Redes MT/BT
                   </a>
                 </li>
                 <li>
-                  <a href="#servicios" className="hover:text-blue-400 transition">
+                  <a href="#servicios" className="hover:text-[#d15666] transition">
                     Subestaciones
                   </a>
                 </li>
                 <li>
-                  <a href="#servicios" className="hover:text-blue-400 transition">
+                  <a href="#servicios" className="hover:text-[#d15666] transition">
                     Alumbrado público
                   </a>
                 </li>
                 <li>
-                  <a href="#servicios" className="hover:text-blue-400 transition">
+                  <a href="#servicios" className="hover:text-[#d15666] transition">
                     Instalaciones
                   </a>
                 </li>
@@ -1150,7 +1174,7 @@ export default function Landing() {
                 <li className="text-gray-400">Resistencia, Chaco</li>
                 <li className="text-gray-400">Argentina</li>
                 <li>
-                  <a href="mailto:info@damrodsas.com.ar" className="hover:text-blue-400 transition">
+                  <a href="mailto:info@damrodsas.com.ar" className="hover:text-[#d15666] transition">
                     info@damrodsas.com.ar
                   </a>
                 </li>
@@ -1162,10 +1186,10 @@ export default function Landing() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
               <p>© {new Date().getFullYear()} DAMROD SAS. Todos los derechos reservados.</p>
               <div className="flex gap-6">
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="#" className="hover:text-[#d15666] transition">
                   Aviso legal
                 </a>
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="#" className="hover:text-[#d15666] transition">
                   Política de privacidad
                 </a>
               </div>
@@ -1179,15 +1203,15 @@ export default function Landing() {
         </div>
       </footer>
 
-      {/* Botón flotante de WhatsApp */}
+      {/* Botón flotante de WhatsApp - Mejorado tamaño y posición para mobile */}
       <a
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-green-700 transition z-50 touch-manipulation"
         aria-label="Contactar por WhatsApp"
       >
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
       </a>
